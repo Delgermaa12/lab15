@@ -18,4 +18,11 @@ public class DivisionTest {
         Division division = new Division();
         assertThrows(IllegalArgumentException.class, () -> division.divide(6.0, 0), "Should throw exception for division by zero");
     }
+
+    @Test
+void testDivideByZero11() {
+    Division d = new Division();
+    assertThrows(IllegalArgumentException.class, () -> d.divide(1.0, 0.0));
+}
+
 }
