@@ -129,6 +129,7 @@
                <phase>prepare-package</phase>
               <goals>
                 <goal>report</goal>
+                <goal>check</goal>
               </goals>
             </execution>
             <execution>
@@ -138,6 +139,17 @@
               </goals>
               <configuration>
                 <rules>
+                <rule>
+            <element>CLASS</element>
+            <includes>
+              <include>*</include>
+            </includes>
+            <limit>
+              <counter>LINE</counter>
+              <value>COVEREDRATIO</value>
+              <minimum>0.80</minimum>
+            </limit>
+          </rule>
                   <rule>
                     <element>BRANCH</element>
                     <limits>
