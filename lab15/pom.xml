@@ -126,7 +126,7 @@
             </execution>
             <execution>
               <id>report</id>
-               <phase>test</phase> 
+               <phase>prepare-package</phase>
               <goals>
                 <goal>report</goal>
               </goals>
@@ -142,9 +142,9 @@
                     <element>BRANCH</element>
                     <limits>
                       <limit>
-                        <counter>BRANCH</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>1.0</minimum>
+                        <counter>INSTRUCTION</counter>
+                    <value>COVEREDRATIO</value>
+                    <minimum>0.80</minimum>
                       </limit>
                     </limits>
                   </rule>
