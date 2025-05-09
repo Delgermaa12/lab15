@@ -25,12 +25,12 @@ jobs:
 
       - name: Checkstyle шалгах
         run: mvn checkstyle:check
-        working-directory: lab15/lab15
+        working-directory: lab15
 
       - name: JUnit тест ба JaCoCo coverage шалгах
         run: mvn test jacoco:check
-        working-directory: lab15/lab15
+        working-directory: lab15
 
       - name: JaCoCo тайлан үүсгэх
         run: mvn jacoco:report
-        working-directory: lab15/lab15
+        working-directory: lab15
